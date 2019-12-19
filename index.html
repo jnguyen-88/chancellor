@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
-
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inria+Serif:300,300i,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gelasio:400,500i,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.csss"/> -->
+    <link href="https://fonts.googleapis.com/css?family=Gelasio:400,400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i&display=swap" rel="stylesheet">
 
 
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="css/styles.css">
     <title>The Chancellor</title>
 </head>
-<body class='container'>
+<body class='wrapper'>
+
     <!-- Navigation -->
-    <nav class="navigation">
-        <div class='navigation__logo'>
-            Logo
-        </div>
-        <ul class="navigation__list">
-            <li class="navigation__item">Find an Agent</li>
-            <li class="navigation__item">Sign Up</li>
-            <li class="navigation__item">Login</li>
+    <nav class="navigation navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <ul class="navigation__list collapse navbar-collapse" id="navbarTogglerDemo02">
+            <li class="navigation__item">About</li>
+            <li class="navigation__item">Amenities</li>
+            <li class='navigation__logo'>
+                <img src='images/logo.png' class='logo' alt='logo'>
+            </li>
+            <li class="navigation__item">Gallery</li>
+            <li class="navigation__item">Contact</li>
         </ul>
     </nav>
 
@@ -36,44 +42,48 @@
         <div class="hero">
             <h2 class='chancellor'>The Chancellor</h2>
             <hr>
-            <h1 class="heading-primary">
+            <h1 class='heading-primary'>
                 Luxury for the <br>
                 Modern World
             </h1>
         </div>
     </header>
-
+<!-- Snapshot -->
     <section class='section-snapshot'>
         <div class='hero-2'>
             <h2 class='luxurious'>Luxurious</h2>
             <hr>
             <div class='address-box'>
-                <p class="paragraph">4718 Main Street</p>
+                <p class="paragraph">4718 Executive Park</p>
                 <p class="paragraph">San Francisco</p>
                 <p class="paragraph">California</p>
-               
             </div>
             <hr>
+            <div class="cta">
+                <span><ion-icon class='mr-4' name="call"></ion-icon></span>
+                <span class="phone">(415) 667-1375</span>
+            </div>
             <ul class='social-media'>
-                <li><ion-icon name="logo-facebook"></ion-icon></li>
-                <li><ion-icon name="logo-twitter"></ion-icon></li>
-                <li><ion-icon name="logo-instagram"></ion-icon></li>
-                <li><ion-icon name="logo-googleplus"></ion-icon></li>
+                <li><a href='#'><ion-icon class='icon--white' name="logo-facebook"></ion-icon></a></li>
+                <li><a href='#'><ion-icon class='icon--white' name="logo-twitter"></ion-icon></a></li>
+                <li><a href='#'><ion-icon class='icon--white' name="logo-instagram"></ion-icon></a></li>
+                <li><a href='#'><ion-icon class='icon--white' name="logo-googleplus"></ion-icon></a></li>
             </ul>
         </div>
     </section>
 
     <!-- Design -->
-    <section class="section-design pt-hg">
-        <div class='row'>
+    <section class="section-design">
+        <div class='my-row'>
             <h2 class='heading-secondary--main'>Design</h2>
-            <p class='long-copy'>Designed by renowned architect Frank Gehry, the Chancellor is a mixed-use, high-rise community.</p>
+            <p class='long-copy'>Designed by renowned architect Frank Gehry, the <span class='chancellor--black'>Chancellor</span> is a mixed-use, high-rise community.</p>
         </div>
         <div class='design__content--right'>
             <h3 class='h3-top'>A thought out space</h3>
             <p class='p-bottom'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Vonsectetur adipiscing elit, sed do eiusmod.
-            Exercitation ullamco laboris nisi ut.</p>
+            Exercitation ullamco laboris nisi ut.</p>  
+            <a href="#" class="btn-text">Read more &rarr;</a>
         </div>
         <figure class='figure--1'>
             <img class='design__img--left' src='./images/living.jpg' alt='living room'>
@@ -86,63 +96,199 @@
             <p class='p-bottom'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, tenderloin kielbasa pastrami corned beef leberkas shank. Brisket frankfurter burgdoggen ham t-bone corned beef ground round salami doner shoulder turkey venison. 
                 Picanha sausage tenderloin tongue tri-tip pork belly landjaeger. 
                 Pig ball tip tenderloin pork chop buffalo fatback picanhaj. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#" class="btn-text">Read more &rarr;</a>
         </div>
         <figure class='figure--2'>
-            <img class='design__img--left' src='./images/bbq.jpg' alt='bbq'>
+            <img class='design__img--right' src='./images/bbq.jpg' alt='bbq'>
         </figure>
     </section>
 
     <!-- Amenities -->
-    <section class="section-amenities pt-hg">
-        <div class='row'>
+    <section class="section-amenities pt-hg pb-hg">
+        <div class='my-row'>
             <h2 class='heading-secondary--main'>Amenities</h2>
+            <p class='long-copy'>Modern Amenities with a Timeless Twist.</p>
         </div>
-            <div class='slick__wrapper mb-lg'>
-                <div class="slick__container">
-                    <div class='slick__item'><img  class='slick__img' src='./images/gym.jpg' alt='living room'></div>
-                    <div class='slick__item'><img  class='slick__img' src='./images/gym-2.jpg' alt='living room'></div>
-                    <div class='slick__item'><img  class='slick__img' src='./images/lounge.jpg' alt='living room'></div>
-                    <div class='slick__item'><img  class='slick__img' src='./images/gameroom.jpg' alt='living room'></div>
-                    <div class='slick__item'><img  class='slick__img' src='./images/chef-kitchen.jpg' alt='living room'></div>
+
+        <div class="container icon-container mb-lg">
+            <div class="amenities__box">
+                <ion-icon class='icon--amenities' name="bicycle"></ion-icon>
+                <h4 class='amenities__header'>Fitness Center</h4>
+                <p>
+                    More than a gym—it's a lifestyle club with cutting-edge fitness. Our state-of-the-art facilities are luxurious and thorough, 
+                    fully equipped with weights, state-of-the-art cardio equipment, yoga studios, and a world-class spa.
+                </p>
+            </div>
+            <div class="amenities__box">
+                <ion-icon class='icon--amenities' name="restaurant"></ion-icon>
+                <h4 class='amenities__header'>Chef-Style Kitchen</h4>
+                <p>A new aesthetic on professional kitchens. The communal kitchen is an open floor plan and a boon for people who love to cook and entertain. 
+                    Great for hosting parties and dinner events. 
+                </p>
+            </div>
+            <div class="amenities__box">
+                <ion-icon class='icon--amenities' name="paw"></ion-icon>
+                <h4 class='amenities__header'>Pet-Friendly</h4>
+                <p>We love pets too! The Chancellor takes great pride in being one of the few pet-friendly 
+                    luxury apartments. The property features a lush outdoor terrace complete with a dog run. 
+                </p>
+            </div>
+        </div>
+       
+        <div class="container">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <div id="carouselExampleIndicators" class="carousel slide" style="overflow:hidden" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img  class='carousel__img' src='./images/gym.jpg' alt='living room'>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fitness Center</h5>
+                          </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img  class='carousel__img' src='./images/gym-2.jpg' alt='living room'>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Aerobics Room</h5>
+                          </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img  class='carousel__img' src='./images/locker.jpg' alt='locker room'>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Locker Room</h5>
+                          </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img  class='carousel__img' src='./images/lounge.jpg' alt='living room'>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>The Commune</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img  class='carousel__img' src='./images/gameroom.jpg' alt='living room'>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Game Center</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img  class='carousel__img' src='./images/chef-kitchen.jpg' alt='living room'>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Chef-Style Kitchen</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
+        </div>
     </section>
 
-    <footer class="footer">Footer</footer>
+    <!-- Gallery -->
+    <section class="section-gallery pt-hg">
+        <div class='my-row'>
+            <h2 class='heading-secondary--main'>Gallery</h2>
+        </div>
+        <div class="gallery__imgs">
+            <figure class="gallery__item gallery__item--1">
+                <img src='images/bath.jpg' alt='bathroom' class='gallery__img'>
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <img src='images/bed.jpg' alt='bedroom' class='gallery__img'>
+            </figure>
+           <figure class="gallery__item gallery__item--3">
+                <img src='images/img-11.jpg' alt='bedroom 2' class='gallery__img'>
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+                <img src='images/img-14.jpg' alt='swimming pool' class='gallery__img'>
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+                <img src='images/img-15.jpg' alt='bedroom' class='gallery__img'>
+            </figure>
+           <figure class="gallery__item gallery__item--6">
+                <img src='images/img-12.jpg' alt='swimming pool 2' class='gallery__img'>
+            </figure>
+        </div>
+    </section>
+<!-- Contact -->
+    <section class="section-contact pt-hg pb-hg">
+        <div class='my-row'>
+            <h2 class='heading-secondary--main'>Contact Us</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <form>
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <ion-icon class='icon' name="contact"></ion-icon>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder='Name'>
+                        </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <ion-icon class='icon' name="mail"></ion-icon>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder='Email'>
+                        </div>
 
-    <script type="text/javascript">$(document).ready(function(){
-        $('.slick__container').slick({
-                centerMode: true,
-                centerPadding: '0px',
-                slidesToShow: 3,
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '40px',
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '40px',
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-        });
-    });
-      </script>
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <ion-icon class='icon' name="create"></ion-icon>
+                                </span>
+                            </div>
+                            <textarea class="form-control" placeholder='Message' rows='5'></textarea>
+                            <input type='submit' value='Submit' class='btn btn-primary btn-block btn-lg'>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <ul class='footer__social-media'>
+            <li><a href='#'><ion-icon class='icon--primary icon' name="logo-facebook"></ion-icon></a></li>
+            <li><a href='#'><ion-icon class='icon--primary icon' name="logo-twitter"></ion-icon></a></li>
+            <li><a href='#'><ion-icon class='icon--primary icon' name="logo-instagram"></ion-icon></a></li>
+            <li><a href='#'><ion-icon class='icon--primary icon' name="logo-googleplus"></ion-icon></a></li>
+        </ul>
+        <div class="center">
+            <ul class="footer__nav">
+                <li class="footer__nav-item"><a href='#' class='link--primary link'>Terms and Conditions</a></li>
+                <li class="footer__nav-item"><a href='#' class='link--primary link'>Privacy Policies</a></li>
+                <li class="footer__nav-item"><a href='#' class='link--primary link'>Contact Us</a></li>
+                <li class="footer__nav-item"><a href='#' class='link--primary link'>Newsletter</a></li>
+            </ul>
+        </div>
+        <p>Copyright &copy; 2019. Chancellor San Francisco Apartments. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        $('.carousel').carousel({
+  interval: 6000
+})
+    </script>
 </body>
 </html>
