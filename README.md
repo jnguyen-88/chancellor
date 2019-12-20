@@ -2,7 +2,7 @@
 
 **About**
 
-This is the landing page for the Chancellor. Designed with a mobile-first approach to create responsive/adaptive designs.
+This is the landing page for the Chancellor. Designed with a mobile-first approach to create responsive/adaptive designs. Developed to be ADA-compliant.
 
 **Technologies / Libraries**
 - HTML5  
